@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-27T16:57:26.893Z</updated>
+  <updated>2019-11-27T17:05:17.839Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/11/27/mac%E4%B8%8A%E7%9A%84virtualenv%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2019/11/27/mac%E4%B8%8A%E7%9A%84virtualenv%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2019-11-26T16:07:20.000Z</published>
-    <updated>2019-11-27T16:57:26.893Z</updated>
+    <updated>2019-11-27T17:05:17.839Z</updated>
     
     <content type="html"><![CDATA[<p>如何在mac上安装并使用virtualenv</p>]]></content>
     
@@ -36,8 +36,12 @@
     </summary>
     
     
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
     
-      <category term="-python -配置" scheme="http://yoursite.com/tags/python-%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
