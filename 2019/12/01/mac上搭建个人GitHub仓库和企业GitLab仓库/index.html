@@ -47,15 +47,26 @@
   };
 </script>
 
-  <meta name="description" content="1.查看mac现有的密钥​    通常连接远程仓库有通过ssh和http两种方式，出于安全性等方面的考虑有很多企业会关闭http方式，因而通常需要使用ssh。如下所示，生成企业密钥前，一般只有id_rsa和id_rsa.pub两个文件，下图为搭建完成后的文件夹内容。 ![image-20191201180509326](&#x2F;Users&#x2F;zhouyikai&#x2F;Library&#x2F;Application Su">
+  <meta name="description" content="1.查看mac现有的密钥​    通常连接远程仓库有通过ssh和http两种方式，出于安全性等方面的考虑有很多企业会关闭http方式，因而通常需要使用ssh。如下所示，生成企业密钥前，一般只有id_rsa和id_rsa.pub两个文件，下图为搭建完成后的文件夹内容。  ##2.为企业级邮箱生成密钥 ​    使用如下命令，指定生成密钥写入的文件，以及企业邮箱，执行完成.ssh文件夹下会生成id_r">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mac上搭建个人GitHub仓库和企业GitLab仓库">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;index.html">
 <meta property="og:site_name" content="haha_blog">
-<meta property="og:description" content="1.查看mac现有的密钥​    通常连接远程仓库有通过ssh和http两种方式，出于安全性等方面的考虑有很多企业会关闭http方式，因而通常需要使用ssh。如下所示，生成企业密钥前，一般只有id_rsa和id_rsa.pub两个文件，下图为搭建完成后的文件夹内容。 ![image-20191201180509326](&#x2F;Users&#x2F;zhouyikai&#x2F;Library&#x2F;Application Su">
+<meta property="og:description" content="1.查看mac现有的密钥​    通常连接远程仓库有通过ssh和http两种方式，出于安全性等方面的考虑有很多企业会关闭http方式，因而通常需要使用ssh。如下所示，生成企业密钥前，一般只有id_rsa和id_rsa.pub两个文件，下图为搭建完成后的文件夹内容。  ##2.为企业级邮箱生成密钥 ​    使用如下命令，指定生成密钥写入的文件，以及企业邮箱，执行完成.ssh文件夹下会生成id_r">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-01T10:53:17.640Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201180509326.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201181528930.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201182355515.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201181842308.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201182031007.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201182718625.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201182922484.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201183210142.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201183701182.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201183551134.png">
+<meta property="og:updated_time" content="2019-12-02T15:54:20.136Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93&#x2F;image-20191201180509326.png">
 
 <link rel="canonical" href="http://yoursite.com/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/">
 
@@ -208,10 +219,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-12-01 18:50:58 / Modified: 18:53:17" itemprop="dateCreated datePublished" datetime="2019-12-01T18:50:58+08:00">2019-12-01</time>
+              <time title="Created: 2019-12-01 18:50:58" itemprop="dateCreated datePublished" datetime="2019-12-01T18:50:58+08:00">2019-12-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-02 23:54:20" itemprop="dateModified" datetime="2019-12-02T23:54:20+08:00">2019-12-02</time>
+              </span>
 
           
 
@@ -225,27 +242,27 @@
 
       
         <h2 id="1-查看mac现有的密钥"><a href="#1-查看mac现有的密钥" class="headerlink" title="1.查看mac现有的密钥"></a>1.查看mac现有的密钥</h2><p>​    通常连接远程仓库有通过ssh和http两种方式，出于安全性等方面的考虑有很多企业会关闭http方式，因而通常需要使用ssh。如下所示，生成企业密钥前，一般只有id_rsa和id_rsa.pub两个文件，下图为搭建完成后的文件夹内容。</p>
-<p>![image-20191201180509326](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201180509326.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201180509326.png" alt="image-20191201180509326"></p>
 <p>##2.为企业级邮箱生成密钥</p>
 <p>​    使用如下命令，指定生成密钥写入的文件，以及企业邮箱，执行完成.ssh文件夹下会生成id_rsa_xiaomi和id_rsa_xiaomi.pub文件。</p>
-<p>![image-20191201181528930](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201181528930.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201181528930.png" alt="image-20191201181528930"></p>
 <p>##3.在企业的gitlab仓库配置密钥</p>
 <p>​    如下图所示，将id_rsa_xiaomi.pub的密钥内容复制到下图框中。</p>
-<p>![image-20191201182355515](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201182355515.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201182355515.png" alt="image-20191201182355515"></p>
 <p>##4.新建config文件</p>
 <p>​    为两个仓库配置相应的sshkey，新建config文件并写入内容，hostname后填写你所在企业的gitlab的仓库地址。</p>
-<p>![image-20191201181842308](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201181842308.png)</p>
-<p>![image-20191201182031007](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201182031007.png)</p>
-<h2 id="5-清空本地的SSH缓存，添加新的SSH密钥到SSH-agent中"><a href="#5-清空本地的SSH缓存，添加新的SSH密钥到SSH-agent中" class="headerlink" title="5.清空本地的SSH缓存，添加新的SSH密钥到SSH agent中"></a>5.清空本地的SSH缓存，添加新的SSH密钥到SSH agent中</h2><p>![image-20191201182718625](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201182718625.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201181842308.png" alt="image-20191201181842308"></p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201182031007.png" alt="image-20191201182031007"></p>
+<h2 id="5-清空本地的SSH缓存，添加新的SSH密钥到SSH-agent中"><a href="#5-清空本地的SSH缓存，添加新的SSH密钥到SSH-agent中" class="headerlink" title="5.清空本地的SSH缓存，添加新的SSH密钥到SSH agent中"></a>5.清空本地的SSH缓存，添加新的SSH密钥到SSH agent中</h2><p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201182718625.png" alt="image-20191201182718625"></p>
 <p>使用ssh-ad -l可以查看已经添加的密钥。</p>
 <h2 id="6-测试ssh连接"><a href="#6-测试ssh连接" class="headerlink" title="6.测试ssh连接"></a>6.测试ssh连接</h2><p>​    使用命令ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>测试连接，后面的地址换企业的仓库地址即可测试企业仓库连接。</p>
-<p>![image-20191201182922484](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201182922484.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201182922484.png" alt="image-20191201182922484"></p>
 <h2 id="7-本地使用git-clone-拉取远程代码"><a href="#7-本地使用git-clone-拉取远程代码" class="headerlink" title="7.本地使用git clone 拉取远程代码"></a>7.本地使用git clone 拉取远程代码</h2><h2 id="8-取消git全局用户名-邮箱，设置独立的用户名-邮箱"><a href="#8-取消git全局用户名-邮箱，设置独立的用户名-邮箱" class="headerlink" title="8.取消git全局用户名/邮箱，设置独立的用户名/邮箱"></a>8.取消git全局用户名/邮箱，设置独立的用户名/邮箱</h2><p>​    使用如下命令取消全局设置。</p>
-<p>![image-20191201183210142](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201183210142.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201183210142.png" alt="image-20191201183210142"></p>
 <p>​    进入到相应的仓库，在仓库内设置独立的用户名和邮箱。</p>
-<p>![image-20191201183701182](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201183701182.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201183701182.png" alt="image-20191201183701182"></p>
 <p>​    查看仓库独立的用户名/邮箱和全局的用户名/邮箱。</p>
-<p>![image-20191201183551134](/Users/zhouyikai/Library/Application Support/typora-user-images/image-20191201183551134.png)</p>
+<p><img src="/2019/12/01/mac%E4%B8%8A%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAGitHub%E4%BB%93%E5%BA%93%E5%92%8C%E4%BC%81%E4%B8%9AGitLab%E4%BB%93%E5%BA%93/image-20191201183551134.png" alt="image-20191201183551134"></p>
 
     </div>
 
